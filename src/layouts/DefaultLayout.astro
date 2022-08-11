@@ -1,0 +1,28 @@
+---
+import { DefaultHeader } from "~/components/Header";
+import { DefaultFooter } from "~/components/Footer";
+---
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yensubldg Portfolio</title>
+    <!-- HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+</head>
+
+<body class="relative bg-main min-h-screen">
+    <div class="bg-wrapper border border-wrapper absolute inset-10 flex flex-col rounded-lg">
+        <DefaultHeader />
+        <main class="relative flex-grow">
+            <slot />
+        </main>
+        <DefaultFooter />
+    </div>
+
+</body>
+
+</html>
